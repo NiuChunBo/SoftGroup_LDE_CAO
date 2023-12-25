@@ -1,0 +1,12 @@
+在vis_ctroller.py中直接并行调用了七个子python程序，
+直接执行cd tools && python vs_ctroller.py即可
+从而进行场景的可视化对比，最后敲定场景之后使用作者提供的上色程序进行可视化（不显示天花板），当然也可以使用自己的
+
+save_results.py直接利用作者的可视化程序visualization.py进行所有任务的保存工作
+分别保存到original_results和my_results文件夹下
+注意：需要提供推理之后保存的results的路径（包括要对比的模型和自己的，得在代码中进行修改）
+
+
+vis_tools用来选择场景并保存
+vis_cao用来可视化消融实验结果
+picture_deal用来进行图片的处理（批量截图和加红色旋转矩形框）
